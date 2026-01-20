@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A recreation of the homepage of BBC">
+    <title>BBC</title>
+  </head>
+  <style>
+    p{
+      font-family:'Segoe UI';
+      margin-top:0;
+      margin-bottom:0;
+    }
+    .header-fb{
+      border:none;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+      align-items:center;
+      margin-top: 10px;
+      margin-bottom:10px;
+    }
+
+    .leftsection-header{
+      margin-left:15px;
+    }
+
+    .rightsection-header{
+      margin-right:15px;
+      align-content:middle;
+    }
+
+    .hamburgersearch{
+      border:none;
+      height:50px;
+      width:50px;
+      vertical-align: middle;
+    }
+
+    .watchlive-btn{
+      padding: 14px 10px 14px 10px;
+      font-family:'Segoe UI';
+      font-size:18px;
+      background-color:white;
+      border:none;
+
+    }
+
+    .bbclogo{
+      border:none;
+      object-fit: fill;
+      height:150px;
+      width:260px;
+    }
+
+    .subscribe-btn{
+      font-family:'Segoe UI';
+      font-size:24px;
+      font-weight:bold;
+      background-color:rgb(0, 102, 255);
+      border-style:solid;
+      border-color:rgb(49, 129, 249);
+      border-width:2px;
+      padding:12px 20px 12px 20px;
+      margin-right:15px;
+    }
+
+    .signin-btn{
+      border:none;
+      font-family:'Segoe UI';
+      font-size:24px;
+      font-weight:bold;
+      border:none;
+      padding: 12px 20px 12px 20px;
+      background-color:white;
+    }
+    
+    .articletopics-fb{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      align-items:center;
+      border-left:none;
+      border-right:none;
+      border-top:solid;
+      border-bottom:solid;
+      border-width:2px;
+      border-color:grey;
+    }
+
+    .articletopic-btn{
+      font-family:'Segoe UI';
+      font-size:18px;
+      padding: 16px 8px 16px 8px;
+      border:none;
+      cursor:pointer;
+      background-color: white;
+    }
+    .articletopic-btn:hover{
+      background-color:darkgrey;
+    }
+    
+    .mainarticles-grid{
+      display:grid;
+      grid-template-columns: 300px 500px 300px;
+      column-gap:25px;
+      justify-content:center;
+      margin-top:40px;
+    }
+
+    .trump{
+      width:300px;
+      height:250px;
+      border:none;
+      object-fit:contain;
+    }
+
+    .italy{
+      width:300px;
+      height:250px;
+      border:none;
+      object-fit:contain;
+    }
+
+    .shutdown{
+      width:500px;
+    }
+
+    .title{
+      font-size:26px;
+      margin-bottom:15px;
+    }
+
+    .teaser{
+      font-size:20px;
+    }
+
+    .footer{
+      font-size:small;
+      color:grey;
+      margin-top:10px;
+      padding-bottom:10px;
+    }
+
+    .footer-time{
+      padding-right:5px;
+    }
+
+    .footer-country{
+      padding-left:5px;
+    }
+
+    .normalsection{
+      border-bottom:solid;
+      border-color:grey;
+      border-width:2px;
+    }
+  </style>
+  <body id="top">
+    <main id="content">
+      <div class="maincontainer">
+      <div class="header-fb">
+        <div class="leftsection-header">
+          <img src="images/hamburgersearch.svg" class="hamburgersearch">
+          <button type="submit" class="watchlive-btn">Watch Live</button>
+        </div>
+        <div class="middle-section-header">
+          <img src="images/BBC_Logo_2021.svg" class="bbclogo">
+        </div>
+        <div class="right-section-header">
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+          <button type="submit" class="signin-btn">Sign In</button>
+        </div>
+      </div>
+
+      <div class="articletopics-fb">
+        <button type="submit" class="articletopic-btn">Home</button>
+        <button type="submit" class="articletopic-btn">News</button>
+        <button type="submit" class="articletopic-btn">Sport</button>
+        <button type="submit" class="articletopic-btn">Business</button>
+        <button type="submit" class="articletopic-btn">Innovation</button>
+        <button type="submit" class="articletopic-btn">Culture</button>
+        <button type="submit" class="articletopic-btn">Arts</button>
+        <button type="submit" class="articletopic-btn">Travel</button>
+        <button type="submit" class="articletopic-btn">Earth</button>
+        <button type="submit" class="articletopic-btn">Audio</button>
+        <button type="submit" class="articletopic-btn">Video</button>
+        <button type="submit" class="articletopic-btn">Live</button>
+        <button type="submit" class="articletopic-btn">Documentaries</button>
+      </div>
+
+      <div class="mainarticles-grid">
+        <div class="leftcontainer-col">
+          <div class="normalsection">
+            <img src="images/trumpepstein.webp" class="trump">
+            <p class="title">What we know about new Epstein emails that mention Trump</p>
+            <p class="teaser">In emails released by Democrats, Epstein says Trump "knew about the girls". The White House says they are an attempt to "smear" the president.</p>
+            <p class="footer"><span class="footer-time">3 hrs ago</span> &vert; <span class="footer-country">US & Canada</span></p>
+          </div>
+          <div>
+            <img src="images/italy.webp" class="italy">
+            <p class="title">Italy investigates claim that tourists paid to go to Bosnia to kill besieged civilians</p>
+            <p class="teaser">Italians and others are alleged to have paid large sums to fire at Bosnians risking their lives in besieged Sarajevo.</p>
+            <p class="footer"><span class="footer-time">7 hrs ago</span>&vert;<span class="footer-country">Europe</span></p>
+          </div>
+        </div>
+        <div class="midcontainer-col">
+          <div>
+            <img src="images/shutdown.png" class="shutdown">
+          </div>
+          <div>
+            <p style="font-size:40px; font-weight:bold;"><span style="color:red;">LIVE:</span> US House votes on ending government shutdown</p>
+            <p class="teaser">The Republican bill, which would fund the government through January, passed the Senate on Monday.</p>
+          </div>
+        </div>
+        <div class="rightcontainer-col">
+          <div class="normalsection">
+            <p class="title">Major corruption scandal engulfs top Zelensky allies</p>
+            <p class="teaser">The Ukrainian president has called for the justice and energy ministers to be removed from their posts.</p>
+            <p class="footer"><span class="footer-time">9 hrs ago</span>&vert;<span class="footer-country"> Europe</span></p>
+          </div>
+          <div class="normalsection">
+            <p class="title">Thirteen hours by touch - inside one of the world's longest exam days</p>
+            <p class="teaser">South Korea's national college entry exam is notoriously hard - but blind students face unique challenges.</p>
+            <p class="footer"><span class="footer-time">4 hrs ago</span>&vert;<span class="footer-country"> Asia</span></p>
+          </div>
+          <div class="normalsection">
+            <p class="title">Timelapse video shows rare northern lights display in Iowa</p>
+            <p class="teaser">A strong geomagnetic storm made the northern lights visible across much of the country.</p>
+            <p class="footer"><span class="footer-time">11 hrs ago</span>&vert;<span class="footer-country"> US & Canada</span></p>
+          </div>
+          <div>
+            <p class="title">'$230 for a cut-up sock': Apple's new iPhone Pocket ridiculed online</p>
+            <p class="teaser">Many took aim at the high price online, while others made fun of its striking likeness to a piece of footwear.</p>
+            <p class="footer"><span class="footer-time">9 hrs ago</span>&vert;<span class="footer-country"> Technology</span></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </main>
+  </body>
+</html>
